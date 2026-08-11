@@ -1,0 +1,18 @@
+[project]
+name = "file-organizer"
+version = "1.0.0"
+description = "Organizador de arquivos por tipo de extensão"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "ISC" }
+dependencies = []
+
+[project.scripts]
+file-organizer = "file_organizer.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["file_organizer", "file_organizer.services"]
