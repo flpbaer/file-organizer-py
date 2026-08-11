@@ -12,6 +12,9 @@ DEFAULT_TARGET = Path.home() / "Downloads"
 
 ENV_TARGET = "FILE_ORGANIZER_TARGET"
 
+# Pasta opcional para os arquivos que nenhuma regra reconheceu.
+OTHERS_FOLDER = "Others"
+
 # Pasta de destino -> extensões que vão para ela.
 FOLDERS: dict[str, tuple[str, ...]] = {
     "Images": (
